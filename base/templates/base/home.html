@@ -1,0 +1,29 @@
+{% extends "main.html" %}
+
+{% block content %}
+<div class="parent">
+    <div class="topic"> 
+        {% include 'base/topic_component.html' %}
+    </div>
+
+    <div class="center">
+        <div>
+            <div class='link'>
+                <div>
+                    <h2> {{roomcount}} rooms available </h2>
+                </div>
+                <div class='create'>
+                    <a href = '{% url "create-room" %}'>+ Create room</a>
+                </div>
+            </div>
+            <div class="room">
+                {% include 'base/feed_component.html' %}
+            </div>
+        </div>
+    </div>
+
+    <div class="activity_part">
+        {% include 'base/activity_component.html' %}
+    </div>
+</div>
+{% endblock content %} 

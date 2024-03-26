@@ -1,0 +1,13 @@
+<div class="activity">
+{% for d in data %}
+    <div class="feed_cards"> 
+        <div class="profile_name"><h4> <a href="{% url 'profile' d.host.id %}"><span> @{{d.host}} </span></a> </h4></div>
+        {%if request.user.is_authenticated %}
+            {%if request.user == d.host %}
+            <h4><div class="edit_btn"><a href="{% url 'update-room' d.id %}">Edit</a></div> &nbsp &nbsp <div class="delete_btn"> <a href="{% url 'delete-room' d.id %}">Delete</a> </div></h4>
+            {% endif %}
+        {% endif %}
+        <h2> <a href='{% url "room" d.id %}'> {{d.name}} </a> </h2>
+     </div> 
+{% endfor %}
+</div>

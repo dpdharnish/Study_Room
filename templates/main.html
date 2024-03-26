@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" media="screen" href="{% static 'styles/main.css' %}" />
+    <link rel="stylesheet" type="text/css" media="screen" href="{% static 'styles/login.css' %}" />
+    <link rel="stylesheet" type="text/css" media="screen" href="{% static 'styles/createroom.css' %}" />
+    <title>ETO</title>
+</head>
+<body>
+    <div class='cover'>
+        {% include 'navbar.html' %}
+        <div>
+            {% if messages %}
+                <ul class="messages">
+                    {% for message in messages %}
+                        <h3>{{message}}</h3>
+                    {% endfor %}
+                </ul>
+            {% endif %}
+        </div>
+        {% block content %}{% endblock %}   
+    </div>
+
+    <script src="{% static 'script/navbar.js' %}"></script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+{% extends 'main.html'%}
+
+{%block content%}
+<style>
+    .parent {
+        display: grid;
+        grid-template-columns: 1fr 3fr 1fr;
+    }
+</style>
+<div class='parent'>
+    <div class="topic">
+    {% include 'base/topic_component.html' %}
+    </div>
+    <div>
+    <h1>{{user.username}}</h1>
+    {% include 'base/feed_component.html' %}
+    </div>
+    <div class="activity_part">
+    {% include 'base/activity_component.html' %}
+    </div>
+</div>
+{%endblock content%}

@@ -1,0 +1,136 @@
+.outer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 90vh;
+}
+.login_cards {
+    width: 450px; /* Set your desired maximum width */
+    margin: 50px;
+    position:relative;
+    top:-30px;
+    flex-shrink: 1;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.login_cards form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login_cards label {
+    margin-bottom: 5px;
+    font-weight: bolder;
+}
+
+.login_cards input {
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.login_cards input[type="submit"] {
+    background-color: #4caf50;
+    color: #fff;
+    cursor: pointer;
+}
+.login_cards input[type="submit"]:active {
+    opacity: 0.7;
+}
+.login_cards a {
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #3498db;
+}
+
+.login_cards a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+.regester_cards {
+    max-width: 100%;
+    margin: 50px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.regester_cards form {
+    display: flex;
+    flex-direction: column;
+}
+
+.regester_cards label {
+    margin-bottom: 5px;
+    color: #333; /* Change label text color */
+}
+
+.regester_cards input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.regester_cards ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.regester_cards ul li {
+    margin-bottom: 5px;
+}
+
+.regester_cards input[type="submit"] {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.regester_cards input[type="submit"]:active {
+    opacity: 0.6;
+}
+
+.regester_cards .helptext {
+    display: block;
+    margin-top: 5px;
+    font-size: 0.8em;
+    color: #555;
+}
+
+.regester_cards p {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 0.9em;
+    color: #555;
+}
+
+.regester_cards a {
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #3498db;
+}
+
+.regester_cards a:hover {
+    text-decoration: underline;
+}

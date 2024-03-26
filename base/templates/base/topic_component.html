@@ -1,0 +1,5 @@
+<div><p>Topics</p></div>
+<div class='all'> <a href="{% url 'home' %}"> All </a> </div>
+{% for t in topic %}
+    <div class='remaining'> <a href="{% url 'home' %}?q={{t.name}}"> {{t.name}} </a> </div>
+{% endfor %}
